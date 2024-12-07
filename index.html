@@ -1,0 +1,83 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Questions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="quiz-container">
+    <!-- Question 1 -->
+    <div class="quiz-question">
+      Question 1: Where is Mount Cameroon found?
+    </div>
+    <div class="quiz-options">
+      <div onclick="checkAnswer(1, 'A')" class="answer-option">A) South west region</div>
+      <div onclick="checkAnswer(1, 'B')" class="answer-option">B) West region</div>
+      <div onclick="checkAnswer(1, 'C')" class="answer-option">C) South</div>
+      <div onclick="checkAnswer(1, 'D')" class="answer-option">D) Fako </div>
+    </div>
+    <div id="feedback1" style="margin-top: 20px;"></div>
+
+    <!-- Question 2 -->
+    <div class="quiz-question">
+      Question 2: What is the largest planet in our solar system?
+    </div>
+    <div class="quiz-options">
+      <div onclick="checkAnswer(2, 'A')" class="answer-option">A) Earth</div>
+      <div onclick="checkAnswer(2, 'B')" class="answer-option">B) Jupiter</div>
+      <div onclick="checkAnswer(2, 'C')" class="answer-option">C) Saturn</div>
+      <div onclick="checkAnswer(2, 'D')" class="answer-option">D) Mars</div>
+    </div>
+    <div id="feedback2" style="margin-top: 20px;"></div>
+
+    <!-- Question 3 -->
+    <div class="quiz-question">
+      Question 3: What is the square root of 64?
+    </div>
+    <div class="quiz-options">
+      <div onclick="checkAnswer(3, 'A')" class="answer-option">A) 6</div>
+      <div onclick="checkAnswer(3, 'B')" class="answer-option">B) 7</div>
+      <div onclick="checkAnswer(3, 'C')" class="answer-option">C) 8</div>
+      <div onclick="checkAnswer(3, 'D')" class="answer-option">D) 9</div>
+    </div>
+    <div id="feedback3" style="margin-top: 20px;"></div>
+
+    <!-- Question 4 -->
+    <div class="quiz-question">
+      Question 4: What is the capital city of Cameroon?
+    </div>
+    <div class="quiz-options">
+      <div onclick="checkAnswer(4, 'A')" class="answer-option">A) Buea</div>
+      <div onclick="checkAnswer(4, 'B')" class="answer-option">B) Yaoundé</div>
+      <div onclick="checkAnswer(4, 'C')" class="answer-option">C) Douala</div>
+      <div onclick="checkAnswer(4, 'D')" class="answer-option">D) Bertoua</div>
+    </div>
+    <div id="feedback4" style="margin-top: 20px;"></div>
+
+    <!-- Question 5 -->
+    <div class="quiz-question">
+      Question 5: What is the chemical symbol for water?
+    </div>
+    <div class="quiz-options">
+      <div onclick="checkAnswer(5, 'A')" class="answer-option">A) CO2</div>
+      <div onclick="checkAnswer(5, 'B')" class="answer-option">B) H2O</div>
+      <div onclick="checkAnswer(5, 'C')" class="answer-option">C) O2</div>
+      <div onclick="checkAnswer(5, 'D')" class="answer-option">D) N2</div>
+    </div>
+    <div id="feedback5" style="margin-top: 20px;"></div>
+  </div>
+
+  <!-- Score Display -->
+  <div id="score" style="margin-top: 20px;">Score: 0/5</div>
+
+  <!-- Submit Button -->
+  <button onclick="showFinalScore()" style="margin-top: 20px;">Submit Quiz</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
